@@ -1,0 +1,34 @@
+# Angel Arroyo
+# February 11th,2021
+# 1780023
+
+print('Birthday Calculator')
+print("Please input today's date")
+print('Month')
+month = int(input())
+print('Day')
+day = int(input())
+print('Year')
+year = int(input())
+
+print("\nPlease input your birthday")
+print('Month')
+BirthMonth = int(input())
+print('Day')
+BirthDay = int(input())
+print('Year')
+BirthYear = int(input())
+
+if BirthMonth > month:
+    Age = (year - BirthYear-1)
+
+if BirthMonth == month:
+    if BirthDay > day:
+        Age = (year - BirthYear-1)
+    if BirthDay < day:
+        Age = (year - BirthYear)
+    elif BirthDay == day:
+        Age = (year - BirthYear)
+        print('You are', Age, 'years old today. Happy birthday! (:')
+    else:
+        print('You are', Age, 'years old.')
