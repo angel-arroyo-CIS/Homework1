@@ -1,0 +1,29 @@
+# Angel Arroyo
+# February 11th, 2021
+# 1780023
+
+Colors = {
+    'red': 35,
+    'blue': 25,
+    'green': 23,
+}
+
+red = 35
+blue = 25
+green = 23
+
+print('Enter wall height (feet):')
+WallHeight = float(input())
+
+print('Enter wall width (feet):')
+WallWidth = float(input())
+
+PaintNeeded = ((WallHeight*WallWidth)/350)
+CansNeeded = (round(PaintNeeded))
+print('Wall area:', int(WallHeight*WallWidth), 'square feet')
+print('Paint needed:', '{:.2f}'.format(PaintNeeded), 'gallons')
+print('Cans needed:', CansNeeded, 'can(s)')
+
+print('\nChoose a color to paint the wall:')
+PaintColors = input()
+print('Cost of purchasing %s, $%d' % (PaintColors + ' paint:', Colors.get((PaintColors*CansNeeded))))
